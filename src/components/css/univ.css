@@ -1,0 +1,12 @@
+.homestay-foto{
+width: 700px;
+float: left;
+margin: 10px;
+height: 500px;
+}
+.homestay-judul{
+display: flex;
+margin: 10px;
+flex-wrap: wrap;
+align-content: flex-start;
+}

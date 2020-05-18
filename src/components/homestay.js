@@ -1,12 +1,11 @@
 import React, {Component} from "react";
-// import "./univ.css";
+import "./css/univ.css"
 
-class Univ extends Component {
+class Homestay extends Component {
     render() {
-        const judul = `${this.props.univ.nama} - Rp.${this.props.univ.harga} rb `
+        const judul = `${this.props.homestay.nama} - Rp. ${this.props.homestay.harga} rb `
         const style = {
-                backgroundImage: `url('${this.props.univ.fotoUrl}'
-            )`
+                backgroundImage: `url('${this.props.homestay.fotoUrl}')`
         };
         return (
             <div className="homestay">
@@ -17,4 +16,4 @@ class Univ extends Component {
     }
 }
 
-export default Univ;
+export default Homestay;
