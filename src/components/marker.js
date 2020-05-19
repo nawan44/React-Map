@@ -1,10 +1,15 @@
-import React, { Component } from "react";
+import React from "react";
 import './css/marker.css';
 
-class Marker extends Component {
+class Marker extends React.Component {
+
     render() {
+        let classes = "marker";
+        if(this.props.selected){
+            classes += " selected";
+        }
         return(
-        <div className="marker">{this.props.text} rb</div>
+        <div className={classes}>{this.props.text} rb</div>
         );
     }
 }
